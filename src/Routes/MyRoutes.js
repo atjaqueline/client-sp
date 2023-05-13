@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Messages from "../components/messages";
-import MessagesList from "../components/messagesList";
-import NewMessageForm from "../components/newMessageForm";
+import Messages from "../messages";
+import MessagesList from "../messagesList";
+import NewMessageForm from "../newMessageForm";
 
 function MyRoutes() {
 return (

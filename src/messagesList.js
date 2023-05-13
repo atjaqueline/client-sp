@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const MessageList = () => {
+const MessagesList = () => {
   return (
     <div>
     <ul>
@@ -12,4 +12,4 @@ const MessageList = () => {
   );
 };
 
-export default MessageList;
+export default MessagesList;
