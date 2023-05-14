@@ -7,7 +7,7 @@ const NewMessageForm = () => {
       <form>
         <lable>add new message</lable>
         <input type="text"></input>
-        <button>Submit</button>
+        <button className="btn btn-light sub-btn">Submit</button>
       </form>
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
+import "./Home.css"
 
-
-function Home() {
+function MsgContainer() {
     return ( 
-        <div>
-            <div>
+
+         <div>
+            <div className="msg-container msg-content">
                 <p>You have 2 new messages</p>
             <a href="/messages">See messages</a> 
             </div>
@@ -12,4 +13,4 @@ function Home() {
      );
 }
 
-export default Home;
+export default MsgContainer;

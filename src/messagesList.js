@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NewMessageForm from "./newMessageForm";
 import "./messagesList.css"
+import { Link } from 'react-router-dom';
 
 
 const MessagesList = () => {
@@ -22,25 +23,26 @@ getJSONData();
 
 
   return (
-    <div>
+    <div className="msg-container">
       <p>Messages</p>
+      <NewMessageForm/>
     <ul>
 
-      {messages.map(message => 
-         <div>
+      {messages.map((message) => 
+         <div key={message.id}>
            
          <li className="msg-container"> 
          <img src=""></img>
          <p>Title</p>
          <p>{message.messages}</p>
-           <a href="/messages/${id}">see more</a> 
+           <Link to={`/messages/${message.id}`}>see more</Link> 
            </li>
          
          </div>
         )}
      
     </ul>
-    <NewMessageForm/>
+    
     </div>
   );
 };
