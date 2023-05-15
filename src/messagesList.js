@@ -28,12 +28,12 @@ getJSONData();
       <NewMessageForm/>
     <ul>
 
-      {messages.map((message) => 
+      {messages.map(message => 
          <div key={message.id}>
            
          <li className="msg-container"> 
          <img src=""></img>
-         <p>Title</p>
+         <p>Title {message.id}</p>
          <p>{message.messages}</p>
            <Link to={`/messages/${message.id}`}>see more</Link> 
            </li>

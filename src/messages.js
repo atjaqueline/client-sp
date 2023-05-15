@@ -21,12 +21,7 @@ getJSONData();
 
   return (
       <div>
-        {messageId.map((message) => 
-        <p>{message}</p>
-        
-        )};
-
-    
+        <p>{messageId}</p>
       </div>
   )
 };
