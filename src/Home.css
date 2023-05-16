@@ -1,19 +1,19 @@
-.img-profile{
-max-width: 80%;
+.img-profile {
+  max-width: 80%;
 }
 
-.sidebar{
-    grid-area: sidebar;
+.sidebar {
+  grid-area: sidebar;
 }
 
-.msg-content{
-    grid-area: msg-content;
+.msg-content {
+  grid-area: msg-content;
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:  
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
     "sidebar msg-content msg-content"
     "sidebar msg-content msg-content";
 }

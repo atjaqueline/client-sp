@@ -5,8 +5,10 @@ const NewMessageForm = () => {
     <div>
       {" "}
       <form>
-        <lable>add new message</lable>
-        <input type="text"></input>
+        <label>
+          add new message
+          <input name="newmessage" type="text" />
+        </label>
         <button className="btn btn-light sub-btn">Submit</button>
       </form>
     </div>
