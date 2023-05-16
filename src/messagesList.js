@@ -18,14 +18,19 @@ const MessagesList = () => {
 
   return (
     <div className="msg-container">
-      <p>Messages</p>
+      <div className="msg-mym">
+        <p>My Messages</p>
+      </div>
       <NewMessageForm />
       <ul>
-        {messages.map(message => (
+        {messages.map((message) => (
           <div key={message.id}>
-            <li className="msg-container">
+            <li className="li-msg-container">
               <img src=""></img>
               <p>{message.messages}</p>
+              <Link to=" " className="msg-action">
+                Replay
+              </Link>
               <Link to={`/messages/${message.id}`}>see more</Link>
             </li>
           </div>

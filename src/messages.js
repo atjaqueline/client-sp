@@ -17,7 +17,7 @@ fetchMessage();
 }, []);
 
   return (
-      <div>
+      <div className="li-msg-container">
         <p>{messageId.data}</p>
       </div>
   );
