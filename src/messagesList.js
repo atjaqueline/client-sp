@@ -21,7 +21,7 @@ const MessagesList = () => {
       <p>Messages</p>
       <NewMessageForm />
       <ul>
-        {messages.map((message) => (
+        {messages.map(message => (
           <div key={message.id}>
             <li className="msg-container">
               <img src=""></img>
