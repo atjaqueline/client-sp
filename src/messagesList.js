@@ -29,7 +29,7 @@ const MessagesList = () => {
               <img src=""></img>
               <p>{message.messages}</p>
               <Link to=" " className="msg-action">
-                Replay
+                Comment
               </Link>
               <Link to={`/messages/${message.id}`}>see more</Link>
             </li>

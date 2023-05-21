@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Navbar";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Messages from "./messages";
 import MessagesList from "./messagesList";
 import Home from "./Home";
-import Sidebar from "./Sidebar";
+
 
 function App({ id }) {
   return (
@@ -14,7 +12,7 @@ function App({ id }) {
       <BrowserRouter>
         <Navbar />
         <div className="wrapper">
-          <Sidebar />
+          
 
           <Routes>
             <Route path="/" element={<Home />}></Route>

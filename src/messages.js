@@ -19,6 +19,7 @@ fetchMessage();
   return (
       <div className="li-msg-container">
         <p>{messageId.data}</p>
+        <button>Delete</button>
       </div>
   );
   }

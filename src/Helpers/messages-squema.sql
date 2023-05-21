@@ -5,3 +5,4 @@ CREATE TABLE messages (
   id SERIAL PRIMARY KEY,
   messages VARCHAR(200)
 );
+
