@@ -17,15 +17,15 @@ const MessagesList = () => {
   }, []);
 
   return (
-    <div className="msg-container">
-      <div className="msg-mym">
+    <div>
+      <div>
         <p>My Messages</p>
       </div>
       <NewMessageForm />
       <ul>
         {messages.map((message) => (
           <div key={message.id}>
-            <li className="li-msg-container">
+            <li>
               <img src=""></img>
               <p>{message.messages}</p>
               <Link to=" " className="msg-action">
