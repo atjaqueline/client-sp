@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
+import Updates from "./Updates";
 
 
 function App({ id }) {
@@ -14,8 +15,9 @@ function App({ id }) {
 
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            {/* <Route path="messages/:id" element={<Messages />} id={id} />
-            <Route path="messages" element={<MessagesList />} /> */}
+            <Route path="/updates" element={<Updates />}></Route>
+            {/* <Route path="updates/:id" element={<Updates />} id={id} />
+             */}
           </Routes>
         </div>
       </BrowserRouter>
