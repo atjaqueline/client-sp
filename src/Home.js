@@ -7,7 +7,7 @@ const Home = () => {
     <div>  
       <div className="update-container">
         <div className="header">
-      <p> Updates</p>
+      <p>COMPANY Updates</p>
       <p>LATAMEA VERIFICATION</p>
         </div>
         <div className="content-container">
@@ -23,7 +23,7 @@ const Home = () => {
         </div>
         <div className="button-container">
           <p>Are you ready?</p>
-          <button>Let's go!</button>
+          <a href="/overview" className="btn btn-green">Let's go!</a>
         </div>
           
         </div>

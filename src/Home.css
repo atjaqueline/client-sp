@@ -1,11 +1,14 @@
 body{
   /* background-color: rgba(58, 58, 58, 0.714); */
+  font-family: 'Asap Condensed', sans-serif;
+  
+  
 }
 .update-container{
   border: 1px solid rgb(255, 249, 245);
   margin:  5rem auto; 
-  min-height: 500px;
-  max-width: 90vw;
+  min-height: 550px;
+  max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(252, 249, 248);
@@ -15,6 +18,7 @@ body{
 .header{
  background-color: rgb(183, 215, 140); 
  border-radius: 5px 5px 0px 0px;
+ max-height: 90px;
    flex: 0 0 100%;
   display: flex;
   justify-content: space-between;
@@ -55,13 +59,25 @@ margin-bottom: .3em;
 
 }
 
-button{
+.btn{
   border-radius: 16px;
   margin: 4px 2px;
   padding: 5px 25px;
-  background-color: rgb(183, 215, 140);
   text-align: center;
   text-decoration: none;
   border: none;
   cursor: pointer;
 }
+
+.btn-white{
+  background-color: white;
+}
+
+.btn-green{
+  background-color: rgb(183, 215, 140);
+}
+
+/* .btn-updates-container{
+  display: flex;
+  justify-content: space-between;
+} */

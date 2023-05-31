@@ -2,7 +2,8 @@ import "./App.css";
 import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Updates from "./Updates";
+import Overview from "./Overview";
+import Update from "./Update";
 
 
 function App({ id }) {
@@ -15,7 +16,8 @@ function App({ id }) {
 
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/updates" element={<Updates />}></Route>
+            <Route path="/overview" element={<Overview />}></Route>
+            <Route path="/update" element={<Update />}></Route>
             {/* <Route path="updates/:id" element={<Updates />} id={id} />
              */}
           </Routes>

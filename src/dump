@@ -1,0 +1,4 @@
+  <div className="btn-updates-container">
+          <a href="/" className="btn btn-white">Back</a>
+          <a className="btn btn-green">Ok</a>
+        </div>
