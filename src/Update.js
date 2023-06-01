@@ -24,13 +24,13 @@ const Update = () => {
                 enim ad minim veniam, quis nostrud{" "}
               </p>
             </div>
-            <div className="button-container btn-updates-container">
+            <div className="button-container btn-updates-container btn-mgn">
               <a href="/overview" className="btn btn-white">
                 Back
               </a>
-              <a className="btn btn-white">Skip >></a>
+              <a className="btn btn-white">Skip</a>
               <a href="/details" className="btn btn-green">
-                Ok
+                Details
               </a>
             </div>
           </div>

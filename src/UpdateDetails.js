@@ -11,7 +11,7 @@ const UpdateDetails = () => {
           <p>LATAMEA VERIFICATION</p>
         </div>
         <div className="content-container">
-          <div className="text-container">
+          <div className="details-container">
             <h2>Team: affected_team</h2>
             <div className="info-container">
               <p>
@@ -20,7 +20,7 @@ const UpdateDetails = () => {
                 enim ad minim veniam, quis nostrud{" "}
               </p>
             </div>
-            <div className="button-container btn-updates-container">
+            <div className="button-container btn-updates-container btn-mgn">
               <a href="/update" className="btn btn-white">
                 Back
               </a>
@@ -28,7 +28,14 @@ const UpdateDetails = () => {
             </div>
           </div>
         </div>
-        <input type="textfield" className="comments"></input>
+        {/* add form input */}
+        <lable for="comments"></lable>
+        <input
+          type="text"
+          id="comments"
+          name="comments"
+          className="comments"
+        ></input>
       </div>
     </div>
   );

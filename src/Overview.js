@@ -27,7 +27,7 @@ const Overview = () => {
                 <li>3. lorem dummy</li>
               </ul>
             </div>
-            <div className="button-container btn-updates-container">
+            <div className="button-container btn-updates-container btn-mgn">
               <a href="/" className="btn btn-white">
                 Back
               </a>
