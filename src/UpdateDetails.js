@@ -2,7 +2,7 @@ import "./Home.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const Update = () => {
+const UpdateDetails = () => {
   return (
     <div>
       <div className="update-container">
@@ -11,13 +11,9 @@ const Update = () => {
           <p>LATAMEA VERIFICATION</p>
         </div>
         <div className="content-container">
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="></img>
-          </div>
           <div className="text-container">
-            <h2>Update N</h2>
+            <h2>Team: affected_team</h2>
             <div className="info-container">
-              <h3>Title:</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -25,19 +21,17 @@ const Update = () => {
               </p>
             </div>
             <div className="button-container btn-updates-container">
-              <a href="/overview" className="btn btn-white">
+              <a href="/update" className="btn btn-white">
                 Back
               </a>
-              <a className="btn btn-white">Skip >></a>
-              <a href="/details" className="btn btn-green">
-                Ok
-              </a>
+              <a className="btn btn-green">Next</a>
             </div>
           </div>
         </div>
+        <input type="textfield" className="comments"></input>
       </div>
     </div>
   );
 };
 
-export default Update;
+export default UpdateDetails;
