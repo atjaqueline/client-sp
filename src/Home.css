@@ -77,12 +77,6 @@ img {
   background-color: rgba(164, 226, 117, 255);
 }
 
-/* .btn-updates-container{
-  display: flex;
-  backgorund: rgb(252, 249, 248);
-  justify-content: space-between;
-} */
-
 .comments {
   flex: 0 0 100%;
   display: flex;
