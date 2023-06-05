@@ -5,6 +5,7 @@ import Home from "./Home";
 import Overview from "./Overview";
 import Update from "./Update";
 import UpdateDetails from "./UpdateDetails";
+import PreviousWeek from "./PreviousWeek";
 
 function App({ id }) {
   return (
@@ -17,6 +18,7 @@ function App({ id }) {
             <Route path="/overview" element={<Overview />}></Route>
             <Route path="/update" element={<Update />}></Route>
             <Route path="/details" element={<UpdateDetails />}></Route>
+            <Route path="/previous" element={<PreviousWeek />}></Route>
             {/* <Route path="updates/:id" element={<Updates />} id={id} />
              */}
           </Routes>
