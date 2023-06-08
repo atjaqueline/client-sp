@@ -23,6 +23,10 @@ function App({ id }) {
              */}
           </Routes>
         </div>
+        <p>
+          Disclaimer: All the information contained in this project is entirely
+          fabricated.
+        </p>
       </BrowserRouter>
     </div>
   );
