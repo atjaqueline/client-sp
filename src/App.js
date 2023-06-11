@@ -19,8 +19,6 @@ function App({ id }) {
             <Route path="/update" element={<Update />}></Route>
             <Route path="/details" element={<UpdateDetails />}></Route>
             <Route path="/previous" element={<PreviousWeek />}></Route>
-            {/* <Route path="updates/:id" element={<Updates />} id={id} />
-             */}
           </Routes>
         </div>
         <p>
