@@ -12,7 +12,7 @@ const Update = () => {
         </div>
         <div className="content-container">
           <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="></img>
+            <img src="images/img-3.jpg"></img>
           </div>
           <div className="text-container">
             <h2>Update id</h2>
@@ -22,16 +22,16 @@ const Update = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud{" "}
-              </p>
+              </p><a href="/details" className="btn btn-green">
+                Details
+              </a>
             </div>
             <div className="button-container btn-updates-container btn-mgn">
               <a href="/overview" className="btn btn-white">
                 Back
               </a>
-              <a className="btn btn-white">Skip</a>
-              <a href="/details" className="btn btn-green">
-                Details
-              </a>
+              <a className="btn btn-white">Next Update</a>
+              
             </div>
           </div>
         </div>

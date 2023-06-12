@@ -9,7 +9,7 @@ body {
   max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(239, 241, 238, 255);
+  background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
 }
@@ -39,7 +39,8 @@ body {
 }
 
 img {
-  max-width: 200px;
+  width: 200px;
+  height: 200px;
 }
 .img-container {
   display: flex;
@@ -70,7 +71,7 @@ img {
 }
 
 .btn-white {
-  background-color: white;
+  background-color: rgba(237, 237, 237, 0.762);
 }
 
 .btn-green {

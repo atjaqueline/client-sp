@@ -22,9 +22,8 @@ const UpdateDetails = () => {
             </div>
             <div className="button-container btn-updates-container btn-mgn">
               <a href="/update" className="btn btn-white">
-                Back
+                Go Back
               </a>
-              <a className="btn btn-green">Next</a>
             </div>
           </div>
         </div>
