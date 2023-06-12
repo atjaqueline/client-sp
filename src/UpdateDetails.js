@@ -20,11 +20,9 @@ const UpdateDetails = () => {
                 enim ad minim veniam, quis nostrud{" "}
               </p>
             </div>
-            <div className="button-container btn-updates-container btn-mgn">
               <a href="/update" className="btn btn-white">
                 Go Back
               </a>
-            </div>
           </div>
         </div>
         {/* add form input */}
