@@ -1,11 +1,12 @@
 import "./Home.css";
+import Comments from "./Comments";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const UpdateDetails = () => {
   return (
     <div>
-      <div className="update-container">
+      <div className="update-container details">
         <div className="header">
           <p>COMPANY Updates</p>
           <p>LATAMEA VERIFICATION</p>
@@ -20,19 +21,26 @@ const UpdateDetails = () => {
                 enim ad minim veniam, quis nostrud{" "}
               </p>
             </div>
-              <a href="/update" className="btn btn-white">
-                Go Back
-              </a>
+            <a href="/update" className="btn btn-white">
+              Go Back
+            </a>
           </div>
         </div>
         {/* add form input */}
         <lable for="comments"></lable>
+      </div>
+      <div className="comments-container">
+        <h1></h1>Comments
         <input
           type="text"
           id="comments"
           name="comments"
           className="comments"
         ></input>
+        <button className="btn btn-green btn-comments">
+          <a>Submit</a>
+        </button>
+        <Comments />
       </div>
     </div>
   );

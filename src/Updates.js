@@ -14,20 +14,19 @@ const Updates = () => {
   }, []);
 
   return (
-      <div>
     <div>
-      {updates.map((updates) => (
-        <div className="updates-container">
-          <p>Title:{updates.title}</p>
-          <p>{updates.submited_by}</p>
-          <p>{updates.description}</p>
-          <p>Submited by: {updates.submited_by}</p>
+      <div>
+        {updates.map((updates) => (
+          <div className="updates-container">
+            <p>Title:{updates.title}</p>
+            <p>{updates.submited_by}</p>
+            <p>{updates.description}</p>
+            <p>Submited by: {updates.submited_by}</p>
           </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
-  
 };
 
 export default Updates;

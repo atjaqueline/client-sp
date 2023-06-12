@@ -5,14 +5,14 @@ import React, { useEffect, useState } from "react";
 const Home = () => {
   return (
     <div>
-      <div className="update-container">
+      <div className="update-container update">
         <div className="header">
           <p>COMPANY Updates</p>
           <p>LATAMEA VERIFICATION</p>
         </div>
         <div className="content-container">
           <div className="img-container">
-            <img src='images/img.jpg'/>
+            <img src="images/img.jpg" />
             <a href="/previous">PREVIOUS WEEKS</a>
           </div>
           <div className="text-container">

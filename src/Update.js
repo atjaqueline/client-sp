@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 const Update = () => {
   return (
     <div>
-      <div className="update-container">
+      <div className="update-container update">
         <div className="header">
           <p>COMPANY Updates</p>
           <p>LATAMEA VERIFICATION</p>
@@ -22,7 +22,8 @@ const Update = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud{" "}
-              </p><a href="/details" className="btn btn-green">
+              </p>
+              <a href="/details" className="btn btn-green">
                 Details
               </a>
             </div>
@@ -31,7 +32,6 @@ const Update = () => {
                 Back
               </a>
               <a className="btn btn-white">Next Update</a>
-              
             </div>
           </div>
         </div>

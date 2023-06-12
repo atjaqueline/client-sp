@@ -4,7 +4,7 @@ body {
 }
 .update-container {
   border: 1px solid rgba(239, 241, 238, 255);
-  margin: 5rem auto;
+
   min-height: 550px;
   max-width: 70vw;
   display: flex;
@@ -13,6 +13,20 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
 }
+
+.update {
+  margin: 5rem auto;
+}
+
+.details-container {
+  max-width: 60%;
+  margin: auto;
+}
+
+.details {
+  margin: 5rem auto 0;
+}
+
 .header {
   background-color: rgba(164, 226, 117, 255);
   border-radius: 5px 5px 0px 0px;
@@ -32,6 +46,14 @@ body {
   padding: 1rem;
   margin: auto 3rem;
   flex-wrap: wrap;
+}
+
+.comments-container {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto 3rem;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .text-container {
@@ -89,7 +111,15 @@ img {
   margin: 0 2em;
 }
 
-.details-container {
-  max-width: 60%;
-  margin: auto;
+.btn-comments {
+  margin-left: inherit;
+}
+
+.comment {
+  border: 1px solid black;
+  background-color: rgb(183, 193, 223);
+}
+
+.comment-id {
+  border-bottom: 1px solid black;
 }
