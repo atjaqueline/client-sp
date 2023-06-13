@@ -1,5 +1,4 @@
 import "./Home.css";
-import Comments from "./Comments";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
@@ -29,7 +28,7 @@ const UpdateDetails = () => {
         {/* add form input */}
         <lable for="comments"></lable>
       </div>
-      <div className="comments-container">
+      {/* <div className="comments-container">
         <h1></h1>Comments
         <input
           type="text"
@@ -40,8 +39,8 @@ const UpdateDetails = () => {
         <button className="btn btn-green btn-comments">
           <a>Submit</a>
         </button>
-        <Comments />
-      </div>
+
+      </div> */}
     </div>
   );
 };
