@@ -7,8 +7,8 @@ const UpdateDetails = () => {
     <div>
       <div className="update-container details">
         <div className="header">
-          <p>COMPANY Updates</p>
-          <p>LATAMEA VERIFICATION</p>
+          <p></p>
+          <p></p>
         </div>
         <div className="content-container">
           <div className="details-container">
