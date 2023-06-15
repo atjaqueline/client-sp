@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 const PreviousWeek = () => {
   return (
     <div>
-      <div className="update-container">
+      <div className="update-container update">
         <div className="header">
           <p>COMPANY Updates</p>
           <p>LATAMEA VERIFICATION</p>

@@ -23,9 +23,6 @@ body {
   margin: auto;
 }
 
-.details {
-  margin: 5rem auto 0;
-}
 
 .header {
   background-color: rgba(164, 226, 117, 255);
@@ -46,6 +43,7 @@ body {
   padding: 1rem;
   margin: auto 3rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .comments-container {
