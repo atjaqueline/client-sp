@@ -2,7 +2,19 @@ import "./Home.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+const baseURL = "http://localhost:8080/api/updates/102";
+
 const Update = () => {
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  if(!post) return null;
+
   return (
     <div>
       <div className="update-container update">
@@ -15,13 +27,11 @@ const Update = () => {
             <img src="images/img-3.jpg"></img>
           </div>
           <div className="text-container">
-            <h2>Update id</h2>
+            <h2>Update {post.id}</h2>
             <div className="info-container">
-              <h3>Title:</h3>
+              <h3>{post.title}</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud{" "}
+               {post.description}
               </p>
               <a href="/details" className="btn btn-green">
                 Details
@@ -38,6 +48,6 @@ const Update = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Update;

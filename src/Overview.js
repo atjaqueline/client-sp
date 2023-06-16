@@ -2,7 +2,19 @@ import "./Home.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+const baseURL = "http://localhost:8080/api/updates/102";
+  
 const Overview = () => {
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  if(!post) return null;
+
   return (
     <div>
       <div className="update-container update">
@@ -18,7 +30,7 @@ const Overview = () => {
             <h2>21 May - 27 May</h2>
             <div className="info-container">
               <ul>
-                <li>1. lorem Ipsum is simply</li>
+                <li>1. {post.title}</li>
               </ul>
               <ul>
                 <li>2. lorem dummy text of the </li>

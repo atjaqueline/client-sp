@@ -2,7 +2,20 @@ import "./Home.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+
+  const baseURL = "http://localhost:8080/api/updates/102";
+  
 const UpdateDetails = () => {
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  if(!post) return null;
+
   return (
     <div>
       <div className="update-container update">
@@ -12,12 +25,10 @@ const UpdateDetails = () => {
         </div>
         <div className="content-container">
           <div className="details-container">
-            <h2>Team: affected_team</h2>
+            <h2>{post.affected_team}</h2>
             <div className="info-container">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud{" "}
+               {post.optional_details}
               </p>
             </div>
             <a href="/update" className="btn btn-white">
@@ -30,6 +41,6 @@ const UpdateDetails = () => {
     
     </div>
   );
-};
+}
 
 export default UpdateDetails;
