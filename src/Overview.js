@@ -1,13 +1,13 @@
 import "./Home.css";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const baseURL = "http://localhost:8080/api/updates/102";
   
 const Overview = () => {
-  const [post, setPost] = React.useState(null);
+  const [post, setPost] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     axios.get(baseURL).then((response) => {
       setPost(response.data);
     });
