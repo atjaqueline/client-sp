@@ -2,7 +2,7 @@ import "./Home.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const baseURL = "http://localhost:8080/api/updates/102";
+const baseURL = "http://localhost:8080/api/updates";
   
 const Overview = () => {
   const [post, setPost] = useState(null);
@@ -10,6 +10,7 @@ const Overview = () => {
   useEffect(() => {
     axios.get(baseURL).then((response) => {
       setPost(response.data);
+      console.log(post);
     });
   }, []);
 
@@ -29,15 +30,12 @@ const Overview = () => {
           <div className="text-container">
             <h2>21 May - 27 May</h2>
             <div className="info-container">
-              <ul>
-                <li>1. {post.title}</li>
+              {post.map(post => (
+                 <ul>
+                <li> {post.id} - {post.title}</li>
               </ul>
-              <ul>
-                <li>2. lorem dummy text of the </li>
-              </ul>
-              <ul>
-                <li>3. lorem dummy</li>
-              </ul>
+              ))}
+            
             </div>
             <div className="button-container btn-updates-container btn-mgn">
               <a href="/" className="btn btn-white">
