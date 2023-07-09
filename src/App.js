@@ -1,13 +1,14 @@
 import "./App.css";
 import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
+import Updatehome from "./updatehome";
 import Overview from "./Overview";
 import Update from "./Update";
 import UpdateDetails from "./UpdateDetails";
 import PreviousWeek from "./PreviousWeek";
 import LoginForm from "./auth/LoginForm";
 import SignupForm from "./auth/SignupForm";
+import Home from "./Home";
 
 function App({ id }) {
   return (
@@ -17,6 +18,7 @@ function App({ id }) {
         <div className="wrapper">
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/updates" element={<Updatehome />}></Route>
             <Route path="/login" element={<LoginForm />}></Route>
             <Route path="/signup" element={<SignupForm />}></Route>
             <Route path="/overview" element={<Overview />}></Route>
