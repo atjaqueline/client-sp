@@ -1,16 +1,15 @@
 import PropTyps from "prop-types";
-import homeCard from "../../data/homeCard.json";
 
-const HomeCard = () => {
+const HomeCard = ({ title }) => {
   return (
-    <div className="home-container">
-      {homeCard.map((data) => (
-        <div className="home-card">
-          <h3>{data.title}</h3>
-        </div>
-      ))}
+    <div className="home-card">
+      <h1>{title}</h1>
     </div>
   );
+};
+
+HomeCard.propTypes = {
+  title: PropTyps.string,
 };
 
 export default HomeCard;
