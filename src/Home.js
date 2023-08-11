@@ -4,24 +4,31 @@ import { Link } from "react-router-dom";
 
 const Home = ({}) => {
   return (
-    <div className="update-container update bgdark text-white main-home">
-      <div className="menu-container">
-      <h1>Team Hub</h1>
-
- 
-        <HomeCard title="Updates" />
+    <div className="main-container update bgdark text-white main-home">
+      <div className="hub-container">
+        <div className="main-title">
+          <h2>
+            <b>TEAM</b>
+          </h2>
+          <h1>
+            <b>HUB</b>
+          </h1>
         </div>
+        
+        <HomeCard title="Updates"/>   
        
-        <HomeCard title="Team Events" />
+</div>
+      
+      <div className="box-container">
+        <HomeCard title="Team Events" /> 
         <HomeCard title="Health" />
-        <HomeCard title="Updates" />
-        <HomeCard title="Team Events" />
-        <HomeCard title="Health" />
-        <HomeCard title="Updates" />
-        <HomeCard title="Team Events" />
-        <HomeCard title="Health" />
-  </div>
-    
+        <HomeCard title="Calendar" />
+        <HomeCard title="Efficiency Report" />
+        <HomeCard title="Team lunch" />
+        <HomeCard title="Meeting notes" />
+        <HomeCard title="Side Project" />
+      </div>
+    </div>
   );
 };
 
