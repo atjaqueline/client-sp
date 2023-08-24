@@ -2,19 +2,21 @@ import "./Home.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const baseURL = "http://localhost:8080/api/updates";
+ const baseURL = "http://localhost:8080/api/updates";
   
-const Overview = () => {
-  const [post, setPost] = useState(null);
+ const Overview = () => {
+//   const [post, setPost] = useState(null);
 
-  useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      console.log(post);
-    });
-  }, []);
+//   useEffect(() => {
+//     axios.get(baseURL).then((response) => {
+//       setPost(response.data);
+//       console.log(post);
+//     });
+//   }, []);
 
-  if(!post) return null;
+//   if(!post) return null;
+
+
 
   return (
     <div>
@@ -30,11 +32,11 @@ const Overview = () => {
           <div className="text-container">
             <h2>21 May - 27 May</h2>
             <div className="info-container">
-              {post.map(post => (
+              {/* {post.map(post => (
                  <ul>
                 <li> {post.id} - {post.title}</li>
               </ul>
-              ))}
+              ))} */}
             
             </div>
             <div className="button-container btn-updates-container btn-mgn">

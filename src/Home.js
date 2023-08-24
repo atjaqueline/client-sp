@@ -14,19 +14,17 @@ const Home = ({}) => {
             <b>HUB</b>
           </h1>
         </div>
-        
-        <HomeCard title="Updates"/>   
+        <a href="/updates"><HomeCard title="updates"/> </a>
        
 </div>
-      
       <div className="box-container">
-        <HomeCard title="Team Events" /> 
+        <a href="/updates"><HomeCard title="Team Events" /> </a>
         <HomeCard title="Health" />
         <HomeCard title="Calendar" />
         <HomeCard title="Efficiency Report" />
         <HomeCard title="Team lunch" />
         <HomeCard title="Meeting notes" />
-        <HomeCard title="Side Project" />
+        <HomeCard title="Side Projects" />
       </div>
     </div>
   );
