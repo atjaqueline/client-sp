@@ -7,7 +7,7 @@ function LoginForm() {
         <h3 className="mb-3">Hey there!</h3>
 
         <div className="card">
-          <div className="card-body shadow-lg p-3  bg-body rounded">
+          <div className="form-container card-body shadow-lg p-3  bg-body rounded">
             <form>
               <div className="form-group">
                 <label>Work Email </label>

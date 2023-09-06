@@ -5,16 +5,16 @@ import { useEffect, useState } from "react";
  const baseURL = "http://localhost:8080/api/updates";
   
  const Overview = () => {
-//   const [post, setPost] = useState(null);
+  const [post, setPost] = useState(null);
 
-//   useEffect(() => {
-//     axios.get(baseURL).then((response) => {
-//       setPost(response.data);
-//       console.log(post);
-//     });
-//   }, []);
+  useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+      console.log(post);
+    });
+  }, []);
 
-//   if(!post) return null;
+  if(!post) return null;
 
 
 
